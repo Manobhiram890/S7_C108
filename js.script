@@ -1,0 +1,11 @@
+function updateClock() {
+    const clock = document.getElementById("clok");
+
+    if (clock) {
+        clock.textContent = new Date().toLocaleTimeString();
+    }
+}
+
+updateClock();
+
+setInterval(updateClock, 1000);
